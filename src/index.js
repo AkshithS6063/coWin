@@ -5,7 +5,7 @@ const app = express();
 
 app.get('/',function (req, res) {
 	console.log('request on /');
-	res.send('<h1>hello!</h1>');
+	res.send('get request received on /');
 });
 
 app.listen(process.env.PORT, function() {
